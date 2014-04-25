@@ -1,0 +1,82 @@
+html
+{ height: 100%;}
+
+*
+{ padding: 0;
+  margin: 0;}
+
+#header, #main
+{ width: 960px;
+  margin-left: auto; 
+  margin-right: auto;}
+  
+#header
+{ padding-top: 16px;
+  padding-bottom: 8px;
+  height: 30px;}
+
+#main
+{ height: 600px;
+  padding-bottom: 16px;}
+  
+#selector, #plot, #plot-hist
+{ float: left;
+  width: 600px;
+  height: 100%;}
+  
+#plot, #plot-hist
+{ background-repeat: no-repeat;
+  background-size: 600px 600px;}
+
+#haloPic
+{ position: relative;
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;}
+
+#sidebar, #currentPos
+{ float: right;
+  width: 348px;
+  height: 100%;}
+  
+#panel
+{ position: relative;
+  background-repeat: no-repeat;
+  background-color: gray;
+  background-image: url('json/panel.png');
+  border: 1px solid;}
+
+#indicator
+{ background-color: red;
+  position: absolute;
+  width: 4px;
+  height: 4px;}
+  
+#selRow, #selCol
+{ width: 160px; }
+
+#selCol
+{ margin-right: 24px;}
+
+#info p
+{ padding-top: 12px;
+  font-size: small;}
+  
+
+#info input.style_checkbox
+{ margin-left: 12px; }
+
+#info input.range_input
+{ width: 70px;
+  margin-left: 6px;
+  margin-right: 6px;}
+
+#info input.key_input
+{ margin-left: 6px;
+  width: 160px; }
+
+#info button
+{ margin-left: 24px;}
+
+#currentPos
+{ font-size: small;}

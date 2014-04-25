@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Everything vs. Everything Scatter Plots</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div id="header">
+    <div id="selector">
+      Column (X axis): <select id="selCol"></select>
+      Row (Y axis): <select id="selRow"></select>
+    </div>
+  </div>
+  <div id="main">
+    <div id="plot-hist">LOADING... Please be patient.</div>
+    <div id="plot"></div>
+    <div id="sidebar">
+      <div id="info">
+        <h4>Axis Style</h4>
+        <p>x axis: 
+          <input type="checkbox" class="style_checkbox" id="x_log">log scale</input>
+          <input type="checkbox" class="style_checkbox" id="x_rev">reversed</input>
+        </p>
+        <p>y axis: 
+          <input type="checkbox" class="style_checkbox" id="y_log">log scale</input>
+          <input type="checkbox" class="style_checkbox" id="y_rev">reversed</input>
+        </p>
+        <p>x limits: <input class="range_input" id="x_amin"></input> to <input class="range_input" id="x_amax"></input><button id="setLimits">Set</button></p>
+        <p>y limits: <input class="range_input" id="y_amin"></input> to <input class="range_input" id="y_amax"></input><button id="clearLimits">Clear</button></p>
+        <p><i>Setting limits is still an experimental function. For now you MUST specify all four numbers to set limits.</i></p>
+        <br /><br />
+        <h4>Selection</h4>
+        <p>x range: <input class="range_input" id="xmin"></input> to <input class="range_input" id="xmax"></input><button id="selectRange">Select</button></p>
+        <p>y range: <input class="range_input" id="ymin"></input> to <input class="range_input" id="ymax"></input><button id="clearRange">Unselect</button></p>
+        <br /><br />
+        <h4>Jump to</h4>
+        <p>History: <select id="history"></select></p>
+        <p>Key: <input class="key_input" id="key"></input><button id="goKey">Go!</button></p>
+        <br /><br />
+        <p><i>Interface made by Yao-Yuan Mao, with Google Charts API.</i></p>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src='https://www.google.com/jsapi?autoload={"modules":[{"name":"visualization","version":"1","packages":["corechart"]}]}'></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="dataSourceUrl.js"></script>
+<script src="scatter.js"></script>
+</body>
+</html>
+
